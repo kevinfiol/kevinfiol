@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="description" content="kevin f.'s personal site" />
+        <link rel="shortcut icon" href="&#x2F;img&#x2F;favicon.png" type="image/x-icon" />
+        <link rel="stylesheet" href="&#x2F;css&#x2F;basscss.min.css" />
+        <link rel="stylesheet" href="&#x2F;css&#x2F;dark-mode.css" />
+        <link rel="stylesheet" href="&#x2F;css&#x2F;main.css" />
+        
+        
+
+        
+          <link rel="alternate" type="application/atom+xml" title="RSS" href='&#x2F;atom.xml'>
+        
+        <title>
+            
+                Making your numeric keypad work on a Xubuntu 20.04 VM (VirtualBox)
+            
+        </title>
+    </head>
+
+    <body>
+        <div class="dark-mode-container">
+            <input id="darkSwitch" type="checkbox" />
+            <label class="dark-mode-btn" for="darkSwitch">🌒</label>
+        </div>
+        <main class="main-content max-width-3 mx-auto">
+            <div>
+                
+    <div class="controls p1">
+        <a href="https://github.com/kevinfiol/kevinfiol.com/edit/master/content/blog/making-your-numeric-keypad-work-on-a-xubuntu-2004-vm-virtualbox.md">edit</a>
+    </div>
+
+    <header>
+        <nav>
+            <p class="h3">
+                <a href="/">kevin f.</a>
+            </p>
+        </nav>
+    </header>
+
+    <small class="h5 p0 m0 light-subdue">
+        August 18, 2020
+    </small>
+
+    <aside>
+        
+            
+        
+    </aside>
+
+    <article class="page-content">
+        <h1 id="making-your-numeric-keypad-work-on-a-xubuntu-20-04-vm-virtualbox"><a class="zola-anchor" href="#making-your-numeric-keypad-work-on-a-xubuntu-20-04-vm-virtualbox" aria-label="Anchor link for: making-your-numeric-keypad-work-on-a-xubuntu-20-04-vm-virtualbox">#</a>Making your numeric keypad work on a Xubuntu 20.04 VM (VirtualBox)</h1>
+<p>I fought with this for a good 2 hours before I finally got it working. First step is to install <code>numlockx</code>, if it's not already installed:</p>
+<pre style="background-color:#2b303b;">
+<code class="language-bash" data-lang="bash"><span style="color:#bf616a;">sudo</span><span style="color:#c0c5ce;"> apt update
+</span><span style="color:#bf616a;">sudo</span><span style="color:#c0c5ce;"> apt install numlockx
+</span></code></pre>
+<p>Enable your Num Lock in your VM:</p>
+<pre style="background-color:#2b303b;">
+<code class="language-bash" data-lang="bash"><span style="color:#bf616a;">numlockx</span><span style="color:#c0c5ce;"> on
+</span></code></pre>
+<p>Now in Xubuntu, go to your Whisker Menu (or whatever launcher/menu you're using) and navigate to <code>Settings -&gt; Accessibility -&gt; Mouse</code> and disable <code>Use mouse emulation</code>. </p>
+<p>If you're on vanilla Ubuntu (GNOME), or a DE other than XFCE, you may be looking for a menu called <code>Universal Access</code>, wherein you'll want to disable a feature called <code>Control the pointer using the keypad</code>.</p>
+<p>You may need to log out and back in to confirm this works.</p>
+
+    </article>
+
+    <footer class="mt2">
+        <small>
+            <a href="#">return to top</a>
+        </small>
+    </footer>
+
+            </div>
+        </main>
+        
+        
+        <script src="&#x2F;js&#x2F;dark-mode-switch.min.js"></script>
+    </body>
+</html>
